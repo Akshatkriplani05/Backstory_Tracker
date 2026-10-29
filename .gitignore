@@ -1,0 +1,29 @@
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Generated model artifacts (optional)
+outputs/model/
+outputs/trainer/
+
+# Cached data
+data/cache/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/

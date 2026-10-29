@@ -1,0 +1,192 @@
+{
+  "train": {
+    "accuracy": 0.3594,
+    "macro_f1": 0.2644,
+    "correct": 23,
+    "support": 64,
+    "per_class": {
+      "contradict": {
+        "precision": 0.3594,
+        "recall": 1.0,
+        "f1": 0.5287,
+        "support": 23
+      },
+      "consistent": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 41
+      }
+    },
+    "confusion_matrix": [
+      [
+        23,
+        0
+      ],
+      [
+        41,
+        0
+      ]
+    ],
+    "confusion_labels": [
+      "contradict",
+      "consistent"
+    ]
+  },
+  "test": {
+    "accuracy": 0.375,
+    "macro_f1": 0.2727,
+    "correct": 6,
+    "support": 16,
+    "per_class": {
+      "contradict": {
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5455,
+        "support": 6
+      },
+      "consistent": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      }
+    },
+    "confusion_matrix": [
+      [
+        6,
+        0
+      ],
+      [
+        10,
+        0
+      ]
+    ],
+    "confusion_labels": [
+      "contradict",
+      "consistent"
+    ]
+  },
+  "epoch_losses": [
+    {
+      "epoch": 1.0,
+      "loss": 0.390655517578125
+    },
+    {
+      "epoch": 2.0,
+      "loss": 0.0
+    },
+    {
+      "epoch": 3.0,
+      "loss": 0.0
+    },
+    {
+      "epoch": 4.0,
+      "loss": 0.0
+    },
+    {
+      "epoch": 5.0,
+      "loss": 0.0
+    },
+    {
+      "epoch": 6.0,
+      "loss": 0.0
+    }
+  ],
+  "train_ids": [
+    "13",
+    "108",
+    "100",
+    "88",
+    "130",
+    "113",
+    "71",
+    "57",
+    "10",
+    "138",
+    "26",
+    "46",
+    "79",
+    "117",
+    "76",
+    "63",
+    "116",
+    "17",
+    "125",
+    "134",
+    "68",
+    "74",
+    "11",
+    "25",
+    "14",
+    "20",
+    "5",
+    "55",
+    "104",
+    "43",
+    "23",
+    "45",
+    "120",
+    "102",
+    "4",
+    "106",
+    "137",
+    "112",
+    "18",
+    "99",
+    "118",
+    "8",
+    "83",
+    "41",
+    "40",
+    "107",
+    "32",
+    "19",
+    "139",
+    "105",
+    "36",
+    "66",
+    "31",
+    "65",
+    "50",
+    "34",
+    "92",
+    "62",
+    "90",
+    "96",
+    "73",
+    "9",
+    "29",
+    "35"
+  ],
+  "test_ids": [
+    "39",
+    "122",
+    "69",
+    "84",
+    "48",
+    "109",
+    "1",
+    "89",
+    "98",
+    "6",
+    "12",
+    "54",
+    "126",
+    "128",
+    "67",
+    "123"
+  ],
+  "settings": {
+    "classifier": "microsoft/deberta-v3-small",
+    "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "epochs": 6,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "batch_size": 4,
+    "max_length": 96,
+    "top_k": 5,
+    "words_per_passage_in_model": 8,
+    "input": "backstory passage + five retrieved novel passages"
+  }
+}
